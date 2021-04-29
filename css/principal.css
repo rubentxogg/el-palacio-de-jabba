@@ -1,0 +1,253 @@
+/* ANIMACIONES */
+@keyframes borderVid{
+    from{
+        box-shadow: 0px 0px 5px honeydew;
+    }
+    to{
+        box-shadow: 0px 0px 7px honeydew;
+    }
+
+}
+
+@keyframes listaLuz{
+    0%{
+        text-shadow: 0px 0px 5px rgb(250, 250, 71);
+    }
+    30%{
+        text-shadow: 0px 0px 10px rgb(250, 250, 71);
+    }
+    50%{
+        text-shadow: 0px 0px 15px rgb(250, 250, 71);
+    }
+    70%{
+        text-shadow: 0px 0px 10px rgb(250, 250, 71);
+    }
+    100%{
+        text-shadow: 0px 0px 5px rgb(250, 250, 71);
+    }
+}
+
+@keyframes tablaLuz{
+    0%{
+        text-shadow: 0px 0px 5px honeydew;
+    }
+    30%{
+        text-shadow: 0px 0px 10px honeydew;
+    }
+    50%{
+        text-shadow: 0px 0px 15px honeydew;
+    }
+    70%{
+        text-shadow: 0px 0px 10px honeydew;
+    }
+    100%{
+        text-shadow: 0px 0px 5px honeydew;
+    }
+}
+
+
+/* CAZARRECOMPENSAS */
+#boba{
+    background-image: url(../images/boba.jpeg);
+    background-size: cover;
+    background-position: 30%;
+    height: 300px;
+    margin-top: 19%;
+    border-radius: 10px;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: white; 
+    border: 1px solid white;
+    transition: all 300ms;
+}
+
+#dengar{
+    background-image: url(../images/dengar.jpg);
+    background-size: cover;
+    height: 420px;
+    margin-top: 65%;
+    border-radius: 10px;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: white;
+    border: 1px solid white;
+    background-position: 30%;
+    transition: all 300ms;
+}
+
+#bossk{
+    background-image: url(../images/bossk.jpg);
+    background-size: cover;
+    height: 420px;
+    margin-top: 65%;
+    border-radius: 10px;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: white;
+    border: 1px solid white;
+    background-position: 30%;
+    transition: all 300ms;
+}
+
+#dengar:hover, #boba:hover, #bossk:hover, #alaX:hover, #razorCrest:hover, #atst:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer; /* CURSOR "DEDO" */
+    transition: all 300ms;
+}
+
+/* VEHÍCULOS */
+#alaX{
+    background-image: url(../images/alaX.jpg);
+    background-size: cover;
+    background-position: 40%;
+    height: 300px;
+    margin-top: 19%;
+    border-radius: 10px;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: white; 
+    border: 1px solid white;
+    transition: all 300ms;
+}
+
+#razorCrest{
+    background-image: url(../images/razorCrest.jpeg);
+    background-size: cover;
+    height: 420px;
+    margin-top: 65%;
+    border-radius: 10px;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: white;
+    border: 1px solid white;
+    background-position: 30%;
+    transition: all 300ms;
+}
+
+#atst{
+    background-image: url(../images/atst.jpeg);
+    background-size: cover;
+    height: 420px;
+    margin-top: 65%;
+    border-radius: 10px;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: white;
+    border: 1px solid white;
+    background-position: 30%;
+    transition: all 300ms;
+}
+
+/* TABLA */
+table{
+    margin-top: 5.9%;
+    width: 80%;
+    text-align: center;
+    table-layout: fixed;
+    margin-bottom: 3%;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: white;
+}
+
+table td{
+    height: 50px;
+    transition: all 300ms;
+}
+
+table td:hover{
+    font-size: xx-large;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+table th{
+    height: 50px !important;
+    text-decoration: underline;
+    animation-name: tablaLuz;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+thead{
+    font-family: Lato-Bold;
+}
+
+/* SECTION */
+span > a{
+    text-decoration: none;
+    color: honeydew;
+}
+
+span{
+    text-decoration: underline;
+}
+
+/* VIDEOS */
+#jabba{
+    width: 30%;
+    height: 240px;
+    margin-left: 5%;
+    float: left;
+}
+
+#jabba > iframe{
+    width: 90%;
+}
+
+#swoop{
+    display: block;
+    width: 30%;
+    height: 240px;
+    margin-right: 5%;
+}
+
+#swoop > iframe{
+    width: 90%;
+}
+
+#clearfix{
+    clear: both;
+    margin-bottom: 1.5%;
+}
+
+iframe{
+    border: 2px solid honeydew;
+    border-radius: 5%;
+    animation-name: borderVid;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+/* LISTAS */
+.fondoLista{
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 5px;
+    padding: 1%;
+    width: 30%;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: white;
+    padding: 2.5%;
+    float: left;
+    margin-left: 11%;
+    margin-top: 2%;
+}
+
+.fondoLista ul > span{
+    font-family: Lato-Bold;
+    color: yellow;
+    animation-name: listaLuz;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+#rebelList{
+    list-style-image: url(../images/rebel.jpg);
+}
+
+#imperialList{
+    list-style-image: url(../images/imperial.jpg);
+}
+
+/* SECTION */
+span > a{
+    color: rgb(250, 250, 71);
+    text-shadow: 0px 0px 2px rgb(250, 250, 71);
+}
+
+span a:visited{
+    color: honeydew;
+}

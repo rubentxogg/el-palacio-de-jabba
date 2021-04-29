@@ -1,0 +1,122 @@
+/* FORMULARIO */
+.rad:checked + label{
+    color: rgb(235, 235, 53);
+    text-shadow: 0px 0px 2px rgba(255, 238, 5, 0.856);
+}
+
+#rad{
+    margin-right: 15%;
+}
+
+.rad{
+    width: 10%;
+    margin-left: 15%;
+}
+
+form{
+    text-align: center;
+}
+
+fieldset{
+    padding: 2%;
+    border-radius: 5px;
+}
+
+form p{
+    padding: 2%;
+}
+
+button{
+    display: block;
+    width: 20%;
+    height: 50px;
+    float: left;
+    margin-bottom: 1%;
+}
+
+input:invalid{
+    text-decoration: line-through 3px rgba(248, 248, 90, 0.932);
+    box-shadow: none;
+}
+
+input::placeholder{
+    text-decoration: none;
+}
+
+input{
+    width: 40%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #ffea2ee7;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: honeydew;
+    text-align: center;
+}
+
+ .req::after{
+    content: "*";
+}
+
+label{
+    color: honeydew;
+    font-family: Lato-Bold, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18pt;
+}
+
+
+select{
+    border-radius: 5%;
+    font-family: Lato-Light, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    box-shadow: 0px 0px 1px honeydew;
+    margin-top: 1.5%;
+}
+
+optgroup{
+    font-size: large;
+    font-family: Lato-Bold, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+input:placeholder-shown{
+    text-decoration: none;
+}
+
+/* BOTONES */
+button{
+    cursor: pointer;
+    transition: all 300ms;
+    float: left;
+    font-size: large;
+    margin-left: 19%;
+    border-radius: 4px;
+}
+
+button:hover{
+    transform: scale(1.2, 1.2);
+    font-size: x-large;
+}
+
+button[type="submit"]:hover{
+    box-shadow: 0px 0px 14px rgb(0, 255, 0);
+    color: green;
+}
+
+button[type="reset"]:hover{
+    box-shadow: 0px 0px 14px rgb(255, 0, 0);
+    color: red;
+}
+
+/* IMAGEN */
+img{
+    box-shadow: 0px 0px 14px rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 2px solid honeydew;
+    height: 100px;
+}

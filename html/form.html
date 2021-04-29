@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICONO DE PÁGINA -->
+    <link rel="icon" type="image/png" href="../images/../images/icon.png" />
+
+    <!-- ESTILOS GENERALES -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+
+    <!-- ESTILOS FORMULARIO -->
+    <link rel="stylesheet" type="text/css" href="../css/form.css" />
+
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+        <div onclick="window.location.href='./index.html'">
+            <!-- Al hacer click en el título se redirecciona a la página principal -->
+            <h1>El palacio de Jabba</h1>
+            <p>
+                El mercado negro más famoso de la galaxia
+            </p>
+        </div>
+
+        <nav>
+            <ul id="listaNav"> <a href="#"
+                    onclick="alert('Página en mantenimiento, no se puede logear en el sistema en estos momentos. \nSentimos las molestias.')">Login</a>
+                <li><a href="../html/form.html">Registrarse</a></li>
+            </ul>
+
+            <a href="../html/noticias.html">Noticias</a>
+            <a href="https://www.reddit.com/r/StarWars/" target="_blank">Apuestas</a>
+            <a href="https://starwars.fandom.com/es/wiki/Star_Wars" target="_blank">Wiki</a>
+        </nav>
+    </header>
+
+    <!-- PUBLICIDAD IZQ-->
+    <aside id="asideIzq">
+       
+    </aside>
+
+    <section>
+        <form action="../html/index.html" method="POST" class="fondo">
+            <fieldset>
+                <legend><img src="../images/join.jpg" alt="vader"></legend>
+        
+                <p>
+                    <label class="req" for="nombre">Nombre:</label> <br>
+                    <input type="text" name="nombre" required autofocus>
+                </p>
+
+                <p>
+                    <label class="req" for="apellidos">Apellidos:</label> <br>
+                    <input type="text" name="apellidos" required>
+                </p>
+
+                <p>
+                    <label class="req" for="dni">DNI:</label> <br>
+                    <input type="text" name="dni" required pattern="[\d]{8}[A-Z]">
+                </p>
+
+                <p>
+                    <label class="req" for="direccion">Dirección:</label> <br>
+                    <input type="text" name="direccion" required placeholder="C/Palacio Nº5 PD" pattern="C/[A-Z]?[a-z]+\sNº[\d]+\sP[A-Z]">
+                </p>
+
+                <p>
+                    <label class="req" for="ciudad">Ciudad:</label> <br>
+                    <input type="text" name="ciudad" required>
+                </p>
+
+                <p>
+                    <label class="req" for="codPostal">Código postal:</label> <br>
+                    <input type="number" min="00000" max="99999" list="codpost" required placeholder="44557">
+                </p>
+
+                <datalist id="codpost">
+                    <option>37007</option>
+                    <option>36007</option>
+                    <option>34447</option>
+                    <option>21008</option>
+                    <option>32769</option>
+                </datalist>
+
+                <p>
+                    <label class="req" for="pais">País:</label> <br>
+                    <input type="text" name="pais" required>
+                </p>
+
+                <p>
+                    <label for="fechaNac">Fecha de nacimiento:</label> <br>
+                    <input type="date" name="fechaNac" min="2000-01-02" max="2020-01-01">
+                </p>
+
+                <p>
+                    <label for="correo">Email:</label> <br>
+                    <input type="email" name="correo" pattern="[a-z]+[\d|a-z]+@[a-z]+.es" placeholder="correo@correo.es">
+                </p>
+
+                <p>
+                    <label class="req" for="contraseña">Contraseña:</label> <br>
+                    <input type="password" name="contraseña" required pattern="_[a-z|A-Z]{1,7}_[\w]{5}&[\d]{2}" placeholder="_Máx7letras_5letrasOnúmeros&2num">
+                </p>
+
+                <label class="req">Sexo:</label> <br>
+                <p id="rad"> 
+                    <input class="rad" type="radio" name="prueba" value="masc" required checked> 
+                    <label for="masc">Masculino</label> <br>
+
+                    <input class="rad" type="radio" name="prueba" value="fem">
+                    <label for="fem">Femenino</label>
+                </p>
+
+                <p>
+                    <label class="req" for="aficiones">Aficiones:</label> <br>
+                    <select multiple required>
+                        <optgroup label="Seleccione una o varias"></optgroup>
+                        <option>Carreras de swoops</option>
+                        <option>Jugar al pazaak</option>
+                        <option>Luchar en la arena</option>
+                        <option selected>Reparar droides</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="foto">Subir foto de perfil:</label> <br>
+                    <input type="file" name="foto">
+                </p>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+           
+        </form>
+    </section>
+
+    <!-- PUBLICIDAD DCHA-->
+    <aside id="asideDcha">
+
+    </aside>
+
+    <footer>
+        <address>
+            <p>
+                Dirección: &nbsp&nbsp&nbsp&nbsp Mar de Dunas / Tatooine / Borde exterior
+            </p>
+        </address>
+    </footer>
+</body>
+
+</html>

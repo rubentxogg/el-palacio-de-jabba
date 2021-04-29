@@ -1,0 +1,274 @@
+/* FUENTES */
+@font-face{
+    font-family: Lato-Bold; /* Nombre de la fuente */
+    src: url(../fonts/Lato-Bold.ttf); /* Ubicación de la fuente a utilizar */
+}
+
+@font-face{
+    font-family: Lato-Light;
+    src: url(../fonts/Lato-Light.ttf);
+}
+
+@font-face{
+    font-family: StarWars;
+    src: url(../fonts/Starjedi.ttf);
+}
+
+/* ANIMACIONES */
+@keyframes fondoParrafo{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bajaHeader{
+    from{
+        transform: translateY(-300px);
+    }
+}
+
+@keyframes regist{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+/* GENERAL */
+*{
+    margin: auto;
+}
+
+/* ETIQUETA*/
+body{
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Lato-Light, Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header{
+    margin-top: 0.5%;
+    width: 70%;
+    position: fixed;
+    right: 15%;
+    top: -1%;
+    z-index: 1;
+    animation-name: bajaHeader;
+    animation-duration: 1s;
+}
+
+header nav a{
+    font-family: Lato-Bold, Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 300ms;
+}
+
+header nav a:hover{
+    text-shadow: 0px 0px 8px yellow;
+    transition: all 300ms;
+}
+
+header > div > h1{
+    font-family: StarWars, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 0px 0px 10px yellow;
+    margin-top: -10px;
+}
+
+header > div > p{
+    font-family: StarWars, Verdana, Geneva, Tahoma, sans-serif  ;
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 0px 0px 8px yellow;
+    margin-top: -6px;
+}
+
+header div{
+    border-radius: 50px 50px 50px 50px; /* Recurso de --> www.cssmatic.com */
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    border: 3px solid honeydew;
+    background-image: url(../images/banner.jpg);
+    cursor: pointer;
+    box-shadow: 0px 0px 3px rgb(255, 255, 255);
+    transition: all 300ms;
+}
+
+header div:hover{
+    box-shadow: 0px 0px 20px yellow;
+    box-shadow: 0px 0px 15px yellow;
+    transition: all 300ms;
+    border-color: rgb(245, 245, 42);
+}
+
+/* NAV */
+nav{
+    margin-top: 4px;
+    text-align: center;
+    border-radius: 180px 180px 50px 50px; /* Recurso de --> www.cssmatic.com */
+    -moz-border-radius: 180px 180px 50px 50px;
+    -webkit-border-radius: 180px 180px 50px 50px;
+    border: 3px solid honeydew;
+    background-image: url(../images/banner.jpg);
+    padding: 2px;
+    box-shadow: 0px 0px 3px rgb(255, 255, 255);
+}
+
+nav a{
+    text-decoration: none;
+    font-size: large;
+    color: honeydew;
+    border-right: 2px solid honeydew;
+    margin-right: 2%;
+    padding-right: 2%;
+}
+
+nav a:first-child{
+    border-left: 2px solid honeydew;
+    border-right: none;
+    padding-left: 50%;
+    margin-left: -60%;
+}
+
+nav ul:hover li a{
+    border-left: none;
+    padding: 2%;
+    margin: auto;
+}
+
+#listaNav{
+    text-decoration: none;
+    font-size: large;
+    color: honeydew;
+    border-right: 2px solid honeydew;
+    margin-right: 2%;
+    padding-right: 2%;
+    display: inline-block;
+}
+
+#listaNav:hover li{
+    display: block;
+    position: fixed;
+    width: 10%;
+    border: 2px solid honeydew;
+    border-radius: 4px;
+    border-radius: 50px;
+    padding: 0.5%;
+    margin: auto;
+    background-image: url(../images/banner.jpg);
+    left: 34%;
+    text-shadow: 0px 0px 2px yellow;
+    animation-name: regist, registBorde;
+    animation-duration: 300ms;
+}
+
+#listaNav li{
+    display: none;
+}
+
+/* SECTION */
+section{
+    float: left;
+    margin-left: 0.4%;
+    margin-right: 0.4%;
+    margin-top: 9%;
+    width: 70%;
+    color: honeydew;
+}
+
+section > .fondo > p{
+    font-size: 0.5cm;
+    text-align: justify;
+}
+
+.fondo > p::first-letter{
+    font-family: Lato-Bold, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+}
+
+.fondo{
+    background-color: rgba(0, 0, 0, 0.700);
+    border-radius: 5px;
+    padding: 1%;
+    animation-name: fondoParrafo;
+    animation-duration: 0.8s;
+}
+
+/* FOOTER */
+footer{
+    width: 70%;
+    border-radius: 50px 50px 180px 180px; /* Recurso de --> www.cssmatic.com */
+    -moz-border-radius: 50px 50px 180px 180px;
+    -webkit-border-radius: 50px 50px 180px 180px;
+    border: 3px solid honeydew;
+    color: honeydew;
+    text-align: center;
+    background-image: url(../images/banner.jpg);
+    position: fixed;
+    bottom: 0%;
+    right: 15%;
+}
+
+/* ASIDE IZQ */
+#asideIzq{
+    margin-left: 0.2%;
+    margin-right: 0.2%;
+    margin-top: 0.4%;
+    width: 14%;
+    float: left;
+    overflow: visible;
+    text-align: center;
+}
+
+#asideIzq h2{
+    margin-top: 2%;
+    font-family: Lato-Bold;
+}
+
+#asideIzq > h2{
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: white;
+}
+
+#asideIzq p{
+    font-family: Lato-Light, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: rgb(250, 250, 71);
+    opacity: 0.8;
+}
+
+/* ASIDE DCHA */
+#asideDcha{
+    margin-left: 0.2%;
+    margin-right: 0.2%;
+    margin-top: 0.4%;
+    width: 14%;
+    float: left;
+    overflow: visible;
+    text-align: center;
+}
+
+#asideDcha h2{
+    margin-top: 2%;
+    font-family: Lato-Bold;
+}
+
+#asideDcha > h2{
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: white;
+}
+
+#asideDcha p{
+    font-family: Lato-Light;
+    font-size: x-large;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    color: rgb(250, 250, 71);
+    opacity: 0.7;
+}
